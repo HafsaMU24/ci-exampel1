@@ -1,0 +1,13 @@
+name: Example Workflow
+
+on: [pull_request]
+
+jobs:
+   example2:
+     runs-on: ubuntu latest
+     steps:
+
+     - uses: actions/checkout@v4
+     - name: pull request
+       run: echo "Pull Request detected!"
+
