@@ -6,15 +6,15 @@ on: [push]
 jobs:
   exampel:
     runs-on: ubuntu-latest
-steps:
-   - uses: actions/checkout@v4
-   - name: skriv ut nuvarande datum och tid
-     run:  date
+    steps:
+       - uses: actions/checkout@v4
+       - name: skriv ut nuvarande datum och tid
+         run:  date
 
-print:
-  runs_on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v4
-   - name: lista filerna i projektet
-     run: ls -la
+  print:
+     runs_on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v4
+       - name: lista filerna i projektet
+         run: ls -la
 
